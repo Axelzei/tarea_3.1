@@ -1,10 +1,11 @@
 <html>
 <head></head>
-<body>
-    <form action="recibe_opciones.php" method="POST">
-        <h1>Prepara tu viaje :D</h1>
+<body class="body1">
+    <form action="resultados.php" method="POST">
+        <h1>Prepara tu viaje :1</h1>
+        <hr>
 
-        <h3>Datos del cliente</h3>
+        <h2>Datos del cliente</h2>
         <label for="nom">Ingrese tu nombre: </label>
         <input type="text" step="any" name="nom" id="nom" required>
         <br>
@@ -13,7 +14,7 @@
         <br><br>
         <hr>
 
-        <h3>Destinos turisticos</h3>
+        <h2>Destinos turisticos</h2>
         <select id="destin" name="destin[] " multiple>
             <option value="Cancún">Cancún</option>
             <option value="Puerto Vallarta">Puerto Vallarta</option>
@@ -26,7 +27,7 @@
         <br><br>
         <hr>
 
-        <h3>Actividades turisticas</h3>
+        <h2>Actividades turisticas</h2>
         <label for="opcion-1">
             <input type="checkbox" value="Buceo" id="opcion-1" name="activida[]">
             Buceo
@@ -64,34 +65,34 @@
         <br><br>
         <hr>
 
-        <h3>Servicios adicionales</h3>
+        <h2>Servicios adicionales</h2>
         <label for="2opcion-1">
-            <input type="checkbox" value="Transporte al aeropuerto" id="2opcion-1" name="activida[]">
+            <input type="checkbox" value="Transporte al aeropuerto" id="2opcion-1" name="ser[]">
             Transporte al aeropuerto
         </label>
         <br>
         <label for="2opcion-2">
-            <input type="checkbox" value="Desayuno incluido" id="2opcion-2" name="activida[]">
+            <input type="checkbox" value="Desayuno incluido" id="2opcion-2" name="ser[]">
             Desayuno incluido
         </label>
         <br>
         <label for="2opcion-3">
-            <input type="checkbox" value="Hospedaje de lujo" id="2opcion-3" name="activida[]">
+            <input type="checkbox" value="Hospedaje de lujo" id="2opcion-3" name="ser[]">
             Hospedaje de lujo
         </label>
         <br>
         <label for="2opcion-4">
-            <input type="checkbox" value="Seguro de viajero" id="2opcion-4" name="activida[]">
+            <input type="checkbox" value="Seguro de viajero" id="2opcion-4" name="ser[]">
             Seguro de viajero
         </label>
         <br>
         <label for="2opcion-5">
-            <input type="checkbox" value="Renta de automóvil" id="2opcion-5" name="activida[]">
+            <input type="checkbox" value="Renta de automóvil" id="2opcion-5" name="ser[]">
             Renta de automóvil
         </label>
         <br>
         <label for="2opcion-6">
-            <input type="checkbox" value="Guía turístico" id="2opcion-6" name="activida[]">
+            <input type="checkbox" value="Guía turístico" id="2opcion-6" name="ser[]">
             Guía turístico
         </label>
         <br><br>
