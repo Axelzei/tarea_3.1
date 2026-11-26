@@ -22,13 +22,18 @@
 
     //Mostramos los resultados
     //Mostrar los datos del cliente
+    echo "<div class='titulo'>";
     echo "<h1>Datos Del Viaje</h1> <hr>";
+    echo "</div>";
 
+    echo "<section class='cliente2'>";
     echo "<h2>Datos del cliente</h2>";
     echo "<p>Nombre: <strong>".$nombre."</strong> </p>";
     echo "<p>Correo electronico: <strong>".$email."</strong> </p>  <hr>";
+    echo "</section>";
 
     //Mostrar los destinos turisticos
+    echo "<section class='destinos2'>";
     echo "<h2>Destinos Turisticos</h2>";
     if($destinos === []){
         echo "<p>No seleccionaste ningún elemento</p> <hr>";
@@ -40,8 +45,10 @@
         }
         echo "<p>Elementos seleccionado: <strong>".$con1."</strong></p> <hr>";
     }
+    echo "</section>";
 
     //Mostrar las actividades turisticas
+    echo "<section class='actividades2'>";
     echo "<h2>Actividades Turisticas</h2>";
     if($actividades === []){
         echo "<p>No seleccionaste ningún elemento</p> <hr>";
@@ -53,8 +60,10 @@
         }
         echo "<p>Elementos seleccionado: <strong>".$con2."</strong></p> <hr>";
     }
+    echo "</section>";
 
     //Mostrar lo servicios adicionales
+    echo "<section class='servicios2'>";
     echo "<h2>Servicios Adicionales</h2>";
     if($servicios === []){
         echo "<p>No seleccionaste ningún elemento</p> <hr>";
@@ -66,6 +75,7 @@
         }
         echo "<p>Elementos seleccionado: <strong>".$con3."</strong></p> <hr>";
     }
+    echo "</section>";
 
     //Mostrar el total de elementos seleccionado
     $tol=$con1+$con2+$con3;
@@ -73,7 +83,11 @@
     ?>
 
     <br>
-    <a href="viajes.php">Volver</a>
-    <a href="viajes.php">Imprimir</a>
+    <div class="botones">
+        <ol>
+            <a href="viajes.php">Volver</a>
+            <a href="viajes.php">Imprimir</a>
+        </ol>
+    </div>
 </body>
 </html>
