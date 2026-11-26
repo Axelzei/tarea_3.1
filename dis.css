@@ -1,0 +1,16 @@
+html{
+    background-color: aliceblue;
+}
+
+/* Diseño del viajes.php */
+.body1{
+    background-color: rgb(156, 199, 237);
+    border: 2px solid black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px 7px;
+    width: 800px;
+    margin: 2px auto;
+}
+.titulo{
+    text-align: center;
+}
