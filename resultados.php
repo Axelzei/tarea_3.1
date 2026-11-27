@@ -29,51 +29,57 @@
     echo "<section class='cliente2'>";
     echo "<h2>Datos del cliente</h2>";
     echo "<p>Nombre: <strong>".$nombre."</strong> </p>";
-    echo "<p>Correo electronico: <strong>".$email."</strong> </p>  <hr>";
+    echo "<p>Correo electronico: <strong>".$email."</strong> </p>";
     echo "</section>";
 
     //Mostrar los destinos turisticos
-    echo "<section class='destinos2'>";
     echo "<h2>Destinos Turisticos</h2>";
+    echo "<section class='destinos2'>";
     if($destinos === []){
-        echo "<p>No seleccionaste ningún elemento</p> <hr>";
+        echo "<p>No seleccionaste ningún elemento</p>";
     }else{
         echo "<p>Los destinos escogidos son:</p>";
+        echo "<div class='turis'>";
         foreach($destinos as $des){
-            echo "<p><strong>".$des."</strong></p>";
             $con1++;
+            echo "<p><strong>".$con1.". ".$des."</strong></p>";
         }
-        echo "<p>Elementos seleccionado: <strong>".$con1."</strong></p> <hr>";
+        echo "</div>";
+        echo "<p>Elementos seleccionado: <strong>".$con1."</strong></p>";
     }
     echo "</section>";
 
     //Mostrar las actividades turisticas
-    echo "<section class='actividades2'>";
     echo "<h2>Actividades Turisticas</h2>";
+    echo "<section class='actividades2'>";
     if($actividades === []){
-        echo "<p>No seleccionaste ningún elemento</p> <hr>";
+        echo "<p>No seleccionaste ningún elemento</p>";
     }else{
         echo "<p>Las actividades turisticas escogidos son:</p>";
+        echo "<div class='act'>";
         foreach($actividades as $act){
-            echo "<p><strong>".$act."</strong></p>";
             $con2++;
+            echo "<p><strong>".$con2.". ".$act."</strong></p>";
         }
-        echo "<p>Elementos seleccionado: <strong>".$con2."</strong></p> <hr>";
+        echo "</div>";
+        echo "<p>Elementos seleccionado: <strong>".$con2."</strong></p>";
     }
     echo "</section>";
 
     //Mostrar lo servicios adicionales
-    echo "<section class='servicios2'>";
     echo "<h2>Servicios Adicionales</h2>";
+    echo "<section class='servicios2'>";
     if($servicios === []){
-        echo "<p>No seleccionaste ningún elemento</p> <hr>";
+        echo "<p>No seleccionaste ningún elemento</p>";
     }else{
         echo "<p>Los servicios adicionales escogidos son:</p>";
+        echo "<div class='ser'>";
         foreach($servicios as $ser){
-            echo "<p><strong>".$ser."</strong></p>";
             $con3++;
+            echo "<p><strong>".$con3.". ".$ser."</strong></p>";
         }
-        echo "<p>Elementos seleccionado: <strong>".$con3."</strong></p> <hr>";
+        echo "</div>";
+        echo "<p>Elementos seleccionado: <strong>".$con3."</strong></p>";
     }
     echo "</section>";
 
@@ -85,8 +91,8 @@
     <br>
     <div class="botones">
         <ol>
-            <a href="viajes.php">Volver</a>
-            <a href="viajes.php">Imprimir</a>
+            <a href="viajes.php" id="b1">Volver</a>
+            <a href="viajes.php" id="b2">Imprimir</a>
         </ol>
     </div>
 </body>
