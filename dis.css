@@ -13,14 +13,14 @@ html{
     border: 2px solid black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0px 7px;
-    width: 990px;
+    width: 999px;
     margin: 2px auto;
 }
 .titulo{
     text-align: center;
 }
 .cliente #em{
-    margin-left: 80px;
+    margin-left: 70px;
 }
 
 .con-act, .con-serv {
